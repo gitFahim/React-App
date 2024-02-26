@@ -1,5 +1,5 @@
 // pages/checkout.js
-import { Button } from 'react-bootstrap';
+import { Button, Image } from 'react-bootstrap';
 import Layout from '../components/Layout';
 import { useCart } from '../context/CartContext';
 
@@ -27,6 +27,7 @@ const Checkout = () => {
       <h1>Checkout</h1>
       {cart.map((item) => (
         <div key={item.id}>
+          <Image src={item.image} alt={item.name} fluid />
           <h3>{item.name}</h3>
           <p>{item.description}</p>
           <p>Price: ${item.price.toFixed(2)}</p>
