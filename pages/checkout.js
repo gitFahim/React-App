@@ -2,9 +2,11 @@
 import { Button, Image } from 'react-bootstrap';
 import Layout from '../components/Layout';
 import { useCart } from '../context/CartContext';
+import { useRouter } from 'next/router'; // Import the useRouter hook
 
 const Checkout = () => {
   const { cart, dispatch } = useCart();
+  const router = useRouter(); // Initialize the useRouter hook
 
   const increaseQuantity = (item) => {
     dispatch({ type: 'INCREASE_QUANTITY', payload: item });
@@ -20,6 +22,10 @@ const Checkout = () => {
 
   const getTotalPrice = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  };
+
+  const handleBack = () => {
+    router.back(); // Navigate back to the previous page (product list)
   };
 
   return (
@@ -38,6 +44,7 @@ const Checkout = () => {
         </div>
       ))}
       <h2>Total Price: ${getTotalPrice().toFixed(2)}</h2>
+      <Button onClick={handleBack}>Back to Product List</Button>
     </Layout>
   );
 };
