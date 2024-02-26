@@ -1,18 +1,83 @@
-
 [
     {
       "id": 1,
-      "name": "Product 1",
-      "description": "Description of product 1",
-      "image": "https://via.placeholder.com/150",
-      "price": 10
+      "name": "Fancy Shoe",
+      "description": "Description of Product 1",
+      "price": 10.99,
+      "image": "/images/product1.jpg",
+      "category": "Shoes"
     },
     {
       "id": 2,
       "name": "Product 2",
-      "description": "Description of product 2",
-      "image": "https://via.placeholder.com/150",
-      "price": 15
+      "description": "Description of Product 2",
+      "price": 19.99,
+      "image": "/images/product2.jpg",
+      "category": "Shoes"
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "description": "Description of Product 3",
+      "price": 14.99,
+      "image": "/images/product3.jpg",
+      "category": "Shoes"
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "description": "Description of Product 4",
+      "price": 9.99,
+      "image": "/images/product4.jpg",
+      "category": "Shoes"
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "description": "Description of Product 5",
+      "price": 24.99,
+      "image": "/images/product5.jpg",
+      "category": "Clothes"
+    },
+    {
+      "id": 6,
+      "name": "Product 6",
+      "description": "Description of Product 6",
+      "price": 12.99,
+      "image": "/images/product6.jpg",
+      "category": "Clothes"
+    },
+    {
+      "id": 7,
+      "name": "Product 7",
+      "description": "Description of Product 7",
+      "price": 17.99,
+      "image": "/images/product7.jpg",
+      "category": "Clothes"
+    },
+    {
+      "id": 8,
+      "name": "Product 8",
+      "description": "Description of Product 8",
+      "price": 8.99,
+      "image": "/images/product8.jpg",
+      "category": "Clothes"
+    },
+    {
+      "id": 9,
+      "name": "Product 9",
+      "description": "Description of Product 9",
+      "price": 29.99,
+      "image": "/images/product9.jpg",
+      "category": "Accessories"
+    },
+    {
+      "id": 10,
+      "name": "Product 10",
+      "description": "Description of Product 10",
+      "price": 15.99,
+      "image": "/images/product10.jpg",
+      "category": "Accessories"
     }
   ]
   

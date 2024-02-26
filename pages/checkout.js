@@ -1,12 +1,12 @@
-// pages/checkout.js
-import { Button, Image } from 'react-bootstrap';
+import { Row, Col, Button, Image } from 'react-bootstrap';
 import Layout from '../components/Layout';
 import { useCart } from '../context/CartContext';
-import { useRouter } from 'next/router'; // Import the useRouter hook
+import { useRouter } from 'next/router';
+import styles from '../styles/Checkout.module.css';
 
 const Checkout = () => {
   const { cart, dispatch } = useCart();
-  const router = useRouter(); // Initialize the useRouter hook
+  const router = useRouter();
 
   const increaseQuantity = (item) => {
     dispatch({ type: 'INCREASE_QUANTITY', payload: item });
@@ -25,26 +25,31 @@ const Checkout = () => {
   };
 
   const handleBack = () => {
-    router.back(); // Navigate back to the previous page (product list)
+    router.back();
   };
 
   return (
     <Layout>
       <h1>Checkout</h1>
+      <div className={styles.checkout}></div>
       {cart.map((item) => (
-        <div key={item.id}>
-          <Image src={item.image} alt={item.name} fluid />
-          <h3>{item.name}</h3>
-          <p>{item.description}</p>
-          <p>Price: ${item.price.toFixed(2)}</p>
-          <p>Quantity: {item.quantity}</p>
-          <Button onClick={() => increaseQuantity(item)}>+</Button>
-          <Button onClick={() => decreaseQuantity(item)}>-</Button>
-          <Button onClick={() => removeItem(item)}>Remove</Button>
-        </div>
+        <Row key={item.id} className="mb-3">
+          <Col xs={3}>
+            <Image src={item.image} alt={item.name} fluid />
+          </Col>
+          <Col xs={9}>
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            <p>Price: ${item.price.toFixed(2)}</p>
+            <p>Quantity: {item.quantity}</p>
+            <Button onClick={() => increaseQuantity(item)}>+</Button>
+            <Button onClick={() => decreaseQuantity(item)}>-</Button>
+            <Button onClick={() => removeItem(item)}>Remove</Button>
+          </Col>
+        </Row>
       ))}
-      <h2>Total Price: ${getTotalPrice().toFixed(2)}</h2>
-      <Button onClick={handleBack}>Back to Product List</Button>
+      <h2 style={{ padding: '10px 0' }}>Total Price: ${getTotalPrice().toFixed(2)}</h2>
+      <Button style={{ margin: '0  0 25px 0' }} onClick={handleBack}>Continue Shopping</Button>
     </Layout>
   );
 };

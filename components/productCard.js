@@ -2,6 +2,7 @@
 import { Card, Button } from 'react-bootstrap';
 import { useCart } from '../context/CartContext';
 import { useRouter } from 'next/router';
+import styles from '../styles/ProductCard.module.css'; 
 import products from '../data/products.json';
 
 const ProductCard = ({ product, price }) => {
@@ -14,8 +15,7 @@ const { dispatch } = useCart();
   };
   return (
     
-    <Card className="h-100">
-    <Card.Header>Product Name</Card.Header>
+    <Card className={styles.productCard}>
 
   
       <Card.Img variant="top" src={product.image} />

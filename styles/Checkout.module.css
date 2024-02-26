@@ -1,0 +1,21 @@
+/* styles/Checkout.module.css */
+.checkout-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .checkout-item img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+  }
+  .checkout {
+    padding: 20px; /* Add padding for spacing */
+  }
+
+  .checkout-button {
+    margin-top: 20px; /* Add margin-top for spacing */
+    margin-bottom: 20px; /* Add margin-bottom for spacing */
+  }

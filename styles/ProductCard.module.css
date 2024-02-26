@@ -1,0 +1,12 @@
+/* styles/ProductCard.module.css */
+.card {
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  .product-card {
+    background-color: #f9c784; /* Set your desired background color */
+  }
