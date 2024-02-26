@@ -1,4 +1,3 @@
-// pages/index.js
 import Layout from '../components/Layout';
 import ProductList from '../components/ProductList';
 import products from '../data/products.json';

@@ -1,4 +1,3 @@
-// components/ShoppingCart.js
 import { useCart } from '../context/CartContext';
 
 const ShoppingCart = () => {

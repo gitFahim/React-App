@@ -6,13 +6,13 @@ body {
   }
 
 .trash-button {
-    color: red; /* Set the icon color to red */
-    background-color: transparent; /* Set the background color to transparent */
-    border: none; /* Remove the border */
+    color: red;
+    background-color: transparent;
+    border: none;
   }
   
   .trash-button:hover {
-    color: darkred; /* Set the icon color to dark red on hover */
+    color: darkred;
   }
 
   @keyframes bounce {
@@ -28,10 +28,10 @@ body {
   }
   
   h1 {
-    font-size: 4rem; /* Set the font size to make it large */
-    color: #333; /* Set the text color */
-    margin-top: 5vh; /* Add some margin-top for spacing */
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Add a text shadow for a lucrative effect */
+    font-size: 4rem;
+    color: #333;
+    margin-top: 5vh;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
   
   .footer {

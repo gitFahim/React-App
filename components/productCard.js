@@ -1,9 +1,7 @@
-// components/ProductCard.js
 import { Card, Button } from 'react-bootstrap';
 import { useCart } from '../context/CartContext';
 import { useRouter } from 'next/router';
 import styles from '../styles/ProductCard.module.css'; 
-import products from '../data/products.json';
 
 const ProductCard = ({ product, price }) => {
 const router = useRouter();
@@ -11,7 +9,6 @@ const { dispatch } = useCart();
 
   const addToCart = (product) => {
     dispatch({ type: 'ADD_TO_CART', payload: product });
-    router.push('/checkout'); // Navigate to the checkout page
   };
   return (
     

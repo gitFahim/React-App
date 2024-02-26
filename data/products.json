@@ -1,80 +1,80 @@
 [
     {
       "id": 1,
-      "name": "Fancy Shoe",
-      "description": "Description of Product 1",
+      "name": "Men's Shoe",
+      "description": "comfyware",
       "price": 10.99,
       "image": "/images/product1.jpg",
       "category": "Shoes"
     },
     {
       "id": 2,
-      "name": "Product 2",
-      "description": "Description of Product 2",
+      "name": "Men's Shoe",
+      "description": "Stylish Nike",
       "price": 19.99,
       "image": "/images/product2.jpg",
       "category": "Shoes"
     },
     {
       "id": 3,
-      "name": "Product 3",
-      "description": "Description of Product 3",
+      "name": "Men's Shoe",
+      "description": "Perfect for evening walk",
       "price": 14.99,
       "image": "/images/product3.jpg",
       "category": "Shoes"
     },
     {
       "id": 4,
-      "name": "Product 4",
-      "description": "Description of Product 4",
+      "name": "Women's Shoe",
+      "description": "Fashionable",
       "price": 9.99,
       "image": "/images/product4.jpg",
       "category": "Shoes"
     },
     {
       "id": 5,
-      "name": "Product 5",
-      "description": "Description of Product 5",
+      "name": "Dress",
+      "description": "Black Dress for fromal party",
       "price": 24.99,
       "image": "/images/product5.jpg",
       "category": "Clothes"
     },
     {
       "id": 6,
-      "name": "Product 6",
-      "description": "Description of Product 6",
+      "name": "Dress",
+      "description": "Rosy",
       "price": 12.99,
       "image": "/images/product6.jpg",
       "category": "Clothes"
     },
     {
       "id": 7,
-      "name": "Product 7",
-      "description": "Description of Product 7",
+      "name": "Dress",
+      "description": "Friends and Family Gathering",
       "price": 17.99,
       "image": "/images/product7.jpg",
       "category": "Clothes"
     },
     {
       "id": 8,
-      "name": "Product 8",
-      "description": "Description of Product 8",
+      "name": "T-shirt",
+      "description": "You never go wrong in this blue T",
       "price": 8.99,
       "image": "/images/product8.jpg",
       "category": "Clothes"
     },
     {
       "id": 9,
-      "name": "Product 9",
-      "description": "Description of Product 9",
+      "name": "Haldbag",
+      "description": "Devil Wears Prada",
       "price": 29.99,
       "image": "/images/product9.jpg",
       "category": "Accessories"
     },
     {
       "id": 10,
-      "name": "Product 10",
-      "description": "Description of Product 10",
+      "name": "Perfume",
+      "description": "Base Camp Perfume for formal smell",
       "price": 15.99,
       "image": "/images/product10.jpg",
       "category": "Accessories"

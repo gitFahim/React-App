@@ -1,8 +1,7 @@
 import { Card, Button } from 'react-bootstrap';
-import { FaShoppingCart } from 'react-icons/fa'; // Import the cart icon
+import { FaShoppingCart } from 'react-icons/fa';
 import Link from 'next/link';
 import Footer from './Footer';
-
 
 import { Row, Col } from 'react-bootstrap';
 import ProductCard from './productCard';
